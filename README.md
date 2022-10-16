@@ -38,7 +38,9 @@ npx hardhat test
 ```` 
 SYMBOL :
 ADDRESS : 0x5865b234E2D690c5A63CE5B843e6A27DC3365583
-NETWORKS : https://goerli.etherscan.io/address/0x5865b234E2D690c5A63CE5B843e6A27DC3365583
+NETWORKS : 
+https://goerli.etherscan.io/address/0x5865b234E2D690c5A63CE5B843e6A27DC3365583
+https://goerli.etherscan.io/token/0x5865b234E2D690c5A63CE5B843e6A27DC3365583
 
 ````
 
