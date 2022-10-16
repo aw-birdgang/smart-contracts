@@ -49,6 +49,9 @@ NETWORKS : https://goerli.etherscan.io/address/0x5865b234E2D690c5A63CE5B843e6A27
 ````
 https://docs.openzeppelin.com/
 https://infura.io/
+https://app.pinata.cloud
+
+https://goerli.etherscan.io/address/0x5865b234E2D690c5A63CE5B843e6A27DC3365583
 
 ````
 
@@ -56,8 +59,6 @@ https://infura.io/
 
 # metadata
 ````
-
-https://app.pinata.cloud
 
 
 ````
