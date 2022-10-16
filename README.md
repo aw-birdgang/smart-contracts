@@ -19,7 +19,8 @@ npx hardhat
 
 npx hardhat compile
 npx hardhat run scripts/deploy-nft-presale.js --network goerli
-npx hardhat verify --network goerli ${address}
+npx hardhat verify 0x5865b234E2D690c5A63CE5B843e6A27DC3365583 BIRDGANG_NFT_ART_ENGINE BNAE ipfs://QmNZypJXcgLr9tJVKrtBgLpr6wpMaDLk6pRXsW6o4cYwCQ/ ipfs://QmNZypJXcgLr9tJVKrtBgLpr6wpMaDLk6pRXsW6o4cYwCQ/ --network goerli
+
 
 ````
 
@@ -36,8 +37,8 @@ npx hardhat test
 # token
 ```` 
 SYMBOL :
-ADDRESS :
-NETWORKS :
+ADDRESS : 0x5865b234E2D690c5A63CE5B843e6A27DC3365583
+NETWORKS : https://goerli.etherscan.io/address/0x5865b234E2D690c5A63CE5B843e6A27DC3365583
 
 ````
 

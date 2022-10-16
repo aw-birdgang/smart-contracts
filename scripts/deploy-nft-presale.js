@@ -7,7 +7,7 @@ async function main() {
     console.log('Deploying contracts with the account :', deployer.address);
 
     const Token = await ethers.getContractFactory("NFTPresale");
-    const token = await Token.deploy("birdgangNFT", "BGNT", "https://birdgang.kr/", "https://reveal.birdgang.kr/");
+    const token = await Token.deploy("BIRDGANG_NFT_ART_ENGINE", "BNAE", "ipfs://QmNZypJXcgLr9tJVKrtBgLpr6wpMaDLk6pRXsW6o4cYwCQ/", "ipfs://QmNZypJXcgLr9tJVKrtBgLpr6wpMaDLk6pRXsW6o4cYwCQ/");
     // const token = await Token.deploy();
     console.log('Token address :', token.address);
 }

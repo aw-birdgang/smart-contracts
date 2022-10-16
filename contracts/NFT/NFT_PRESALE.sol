@@ -26,7 +26,7 @@ contract NFTPresale is ERC721Enumerable, Ownable {
   string public baseExtension = ".json";
   string public notRevealedUri;
   uint256 public cost = 1 ether;
-  uint256 public maxSupply = 10000;
+  uint256 public maxSupply = 1000;
   uint256 public maxMintAmount = 20;
   uint256 public nftPerAddressLimit = 3;
   bool public paused = false;
