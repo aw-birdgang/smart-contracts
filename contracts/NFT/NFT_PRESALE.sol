@@ -30,7 +30,7 @@ contract NFTPresale is ERC721Enumerable, Ownable {
   uint256 public maxMintAmount = 20;
   uint256 public nftPerAddressLimit = 3;
   bool public paused = false;
-  bool public revealed = false;
+  bool public revealed = true;
   bool public onlyWhitelisted = true;
   address[] public whitelistedAddresses;
   mapping(address => uint256) public addressMintedBalance;

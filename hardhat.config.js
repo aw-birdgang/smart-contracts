@@ -9,7 +9,8 @@ const {
   INFURA_KEY,
   DEPLOYER_PRIVATE_KEY,
   ETHERSCAN_KEY_RINKEBY,
-  ETHERSCAN_KEY_GOERLI
+  ETHERSCAN_KEY_GOERLI,
+  POLYGON_KEY_MUMBAI
 } = process.env
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -22,14 +23,6 @@ module.exports = {
     },
     mainnet: {
       url: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
-      accounts: [`${DEPLOYER_PRIVATE_KEY}`],
-    },
-    ropsten: {
-      url: `https://ropsten.infura.io/v3/${INFURA_KEY}`,
-      accounts: [`${DEPLOYER_PRIVATE_KEY}`],
-    },
-    rinkeby: {
-      url: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
       accounts: [`${DEPLOYER_PRIVATE_KEY}`],
     },
     kovan: {
@@ -45,14 +38,21 @@ module.exports = {
       accounts: [`${DEPLOYER_PRIVATE_KEY}`]
     },
     mumbai: {
+      chainId: 80001,
       url: `https://polygon-mumbai.infura.io/v3/${INFURA_KEY}`,
       accounts: [`${DEPLOYER_PRIVATE_KEY}`]
     }
   },
   etherscan: {
     apiKey: {
+      // ethereum
       rinkeby: ETHERSCAN_KEY_RINKEBY,
-      goerli: ETHERSCAN_KEY_GOERLI
+      goerli: ETHERSCAN_KEY_GOERLI,
+
+      // polygon
+      polygon: POLYGON_KEY_MUMBAI,
+      // mumbai: POLYGON_KEY_MUMBAI,
+      polygonMumbai: POLYGON_KEY_MUMBAI
     }
   }
 };
